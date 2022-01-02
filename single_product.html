@@ -37,7 +37,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse nav-button"
+          class="collapse navbar-collapse nav-buttons"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -272,8 +272,8 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var mainImg = document.getElementById("mainImg");
-      var smallImg = document.getElementsByClassName("small-img");
+      var mainImg = document.getElementById('mainImg');
+      var smallImg = document.getElementsByClassName('small-img');
       for (let i = 0; i < 4; i++) {
         smallImg[i].onclick = function () {
           mainImg.src = smallImg[i].src;
