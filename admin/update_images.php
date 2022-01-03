@@ -17,7 +17,28 @@ if(isset($_POST['update_images'])){
         $image_name3 = $product_name."3.jpeg";
         $image_name4 = $product_name."4.jpeg";
 
-        move_uploaded_file($image1,"../assets/imgs/".$image_name1);
+        if(file_exists($image1))
+        {
+        echo "file uploaded to temp dir";
+        }
+        else
+        {
+        echo "file upload failed";
+        exit();
+        }
+
+        if(move_uploaded_file($image1,"../assets/imgs/".$image_name1))
+        {
+        echo "upload complete";
+        }
+        else
+        {
+        echo "move_uploaded_file failed";
+        exit();
+        }
+
+
+        // move_uploaded_file($image1,"../assets/imgs/".$image_name1);
         move_uploaded_file($image2,"../assets/imgs/".$image_name2);
         move_uploaded_file($image3,"../assets/imgs/".$image_name3);
         move_uploaded_file($image4,"../assets/imgs/".$image_name4);
