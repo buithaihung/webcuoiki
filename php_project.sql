@@ -107,7 +107,15 @@ INSERT INTO `products` (`product_id`, `product_name`, `product_category`, `produ
 (3, 'Black Bag', 'bags', 'awesome black bag', 'featured3.jpeg', 'featured3.jpeg', 'featured3.jpeg', 'featured3.jpeg', '200.00', 0, 'black'),
 (4, 'Blue Bag', 'bags', 'awesome blue bag', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', '180.00', 0, 'blue'),
 (5, 'Black coat', 'coats', 'Black coat for men', 'clothes1.jpeg', 'clothes1.jpeg', 'clothes1.jpeg', 'clothes1.jpeg', '150.00', 0, 'black'),
-(6, 'Blue coat', 'coats', 'awesome blue coat', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', '190.00', 0, 'blue');
+(6, 'Blue coat', 'coats', 'awesome blue coat', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', '190.00', 0, 'blue'),
+(7, 'Apple watch', 'watches', 'awesome black watches', 'watch4.jpeg', 'watch4.jpeg', 'watch4.jpeg', 'watch4.jpeg', '400.00', 0, 'back'),
+(8, 'Garmin watches', 'watches', 'awesome watches', 'watch3.jpeg', 'watch3.jpeg', 'watch3.jpeg', 'watch3.jpeg', '300.00', 0, 'black'),
+(9, 'Apple watch', 'watches', 'awesome white watches', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', '440.00', 0, 'white'),
+(10, 'Garmin watches', 'watches', 'awesome purple coat', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', '300.00', 0, 'purple'),
+(11, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes1.jpeg', 'shoes1.jpeg', 'shoes1.jpeg', 'shoes1.jpeg', '155.00', 0, 'purple'),
+(12, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes2.jpeg', 'shoes2.jpeg', 'shoes2.jpeg', 'shoes2.jpeg', '155.00', 0, 'white'),
+(13, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes3.jpeg', 'shoes3.jpeg', 'shoes3.jpeg', 'shoes3.jpeg', '155.00', 0, 'yellow'),
+(14, 'Sport Shoes', 'shoes', 'awesom shoes', 'shoes4.jpeg', 'shoes4.jpeg', 'shoes4.jpeg', 'shoes4.jpeg', '155.00', 0, 'black');
 
 -- --------------------------------------------------------
 

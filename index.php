@@ -10,7 +10,7 @@
         <h5>NEW ARRIVALS</h5>
         <h1><span>Best Prices</span> This Season</h1>
         <p>Eshop offers the best products for the most affordable prices</p>
-        <button>Shop Now</button>
+        <button onclick="window.location.href='<?php echo 'shop.php';?>';">Shop Now</button>
     </div>
 </section>
 
@@ -32,7 +32,7 @@
             <img class="img-fluid" src="assets/imgs/1.jpeg" />
             <div class="details">
                 <h2>Extreamely Awesome Shoes</h2>
-                <button class="text-uppercase">Shop Now</button>
+                <button onclick="window.location.href='<?php echo 'shop.php';?>';" class="text-uppercase">Shop Now</button>
             </div>
         </div>
         <!--Two-->
@@ -40,7 +40,7 @@
             <img class="img-fluid" src="assets/imgs/2.jpeg" />
             <div class="details">
                 <h2>Awesome Jacket</h2>
-                <button class="text-uppercase">Shop Now</button>
+                <button onclick="window.location.href='<?php echo 'shop.php';?>';" class="text-uppercase">Shop Now</button>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
             <img class="img-fluid" src="assets/imgs/3.jpeg" />
             <div class="details">
                 <h2>50% OFF Watches</h2>
-                <button class="text-uppercase">Shop Now</button>
+                <button onclick="window.location.href='<?php echo 'shop.php';?>';" class="text-uppercase">Shop Now</button>
             </div>
         </div>
     </div>
@@ -97,7 +97,7 @@
     <div class="container">
         <h4>MID SEASON'S SALE</h4>
         <h1>Autumn Collection <br> UP to 30% OFF</h1>
-        <button class="text-uppercase">shop now</button>
+        <button onclick="window.location.href='<?php echo 'shop.php';?>';" class="text-uppercase">shop now</button>
     </div>
 </section>
 
