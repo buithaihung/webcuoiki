@@ -158,29 +158,30 @@ CREATE TABLE `products` (
   `product_image4` varchar(255) NOT NULL,
   `product_price` decimal(6,2) NOT NULL,
   `product_special_offer` int(2) NOT NULL,
-  `product_color` varchar(100) NOT NULL
+  `product_color` varchar(100) NOT NULL,
+  `max_product_quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`product_id`, `product_name`, `product_category`, `product_description`, `product_image`, `product_image2`, `product_image3`, `product_image4`, `product_price`, `product_special_offer`, `product_color`) VALUES
-(2, 'Green Bag', 'bags', 'awesome green bag', 'featured2.jpeg', 'featured2.jpeg', 'featured2.jpeg', 'featured2.jpeg', '160.00', 0, 'green'),
-(3, 'Black Bag', 'bags', 'awesome black bag', 'featured3.jpeg', 'featured3.jpeg', 'featured3.jpeg', 'featured3.jpeg', '200.00', 0, 'black'),
-(4, 'Blue Bag', 'bags', 'awesome blue bag', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', '180.00', 0, 'blue'),
-(5, 'Black coat', 'coats', 'Black coat for men', 'clothes1.jpeg', 'clothes1.jpeg', 'clothes1.jpeg', 'clothes1.jpeg', '150.00', 0, 'black'),
-(6, 'Blue coat', 'coats', 'awesome blue coat', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', '190.00', 0, 'blue'),
-(7, 'Apple watch', 'watches', 'awesome black watches', 'watch4.jpeg', 'watch4.jpeg', 'watch4.jpeg', 'watch4.jpeg', '400.00', 0, 'back'),
-(8, 'Garmin watches', 'watches', 'awesome watches', 'watch3.jpeg', 'watch3.jpeg', 'watch3.jpeg', 'watch3.jpeg', '300.00', 0, 'black'),
-(9, 'Apple watch', 'watches', 'awesome white watches', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', '440.00', 0, 'white'),
-(10, 'Garmin watches', 'watches', 'awesome purple coat', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', '300.00', 0, 'purple'),
-(11, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes1.jpeg', 'shoes1.jpeg', 'shoes1.jpeg', 'shoes1.jpeg', '155.00', 0, 'purple'),
-(12, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes2.jpeg', 'shoes2.jpeg', 'shoes2.jpeg', 'shoes2.jpeg', '155.00', 0, 'white'),
-(13, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes3.jpeg', 'shoes3.jpeg', 'shoes3.jpeg', 'shoes3.jpeg', '155.00', 0, 'yellow'),
-(14, 'Sport Shoes', 'shoes', 'awesom shoes', 'shoes4.jpeg', 'shoes4.jpeg', 'shoes4.jpeg', 'shoes4.jpeg', '155.00', 0, 'black'),
-(15, 'Nice coat', 'coats', 'awesome coat', 'clothes3.jpeg', 'clothes3.jpeg', 'clothes3.jpeg', 'clothes3.jpeg', '190.00', 0, 'black'),
-(16, 'Blue coat', 'coats', 'awesome blue coat', 'clothes4.jpeg', 'clothes4.jpeg', 'clothes4.jpeg', 'clothes4.jpeg', '190.00', 0, 'blue');
+INSERT INTO `products` (`product_id`, `product_name`, `product_category`, `product_description`, `product_image`, `product_image2`, `product_image3`, `product_image4`, `product_price`, `product_special_offer`, `product_color`,`max_product_quantity`) VALUES
+(2, 'Green Bag', 'bags', 'awesome green bag', 'featured2.jpeg', 'featured2.jpeg', 'featured2.jpeg', 'featured2.jpeg', '160.00', 0, 'green',10),
+(3, 'Black Bag', 'bags', 'awesome black bag', 'featured3.jpeg', 'featured3.jpeg', 'featured3.jpeg', 'featured3.jpeg', '200.00', 0, 'black',10),
+(4, 'Blue Bag', 'bags', 'awesome blue bag', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', '180.00', 0, 'blue',10),
+(5, 'Black coat', 'coats', 'Black coat for men', 'clothes1.jpeg', 'clothes1.jpeg', 'clothes1.jpeg', 'clothes1.jpeg', '150.00', 0, 'black',10),
+(6, 'Blue coat', 'coats', 'awesome blue coat', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', '190.00', 0, 'blue',10),
+(7, 'Apple watch', 'watches', 'awesome black watches', 'watch4.jpeg', 'watch4.jpeg', 'watch4.jpeg', 'watch4.jpeg', '400.00', 0, 'back',10),
+(8, 'Garmin watches', 'watches', 'awesome watches', 'watch3.jpeg', 'watch3.jpeg', 'watch3.jpeg', 'watch3.jpeg', '300.00', 0, 'black',10),
+(9, 'Apple watch', 'watches', 'awesome white watches', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', '440.00', 0, 'white',10),
+(10, 'Garmin watches', 'watches', 'awesome purple coat', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', '300.00', 0, 'purple',10),
+(11, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes1.jpeg', 'shoes1.jpeg', 'shoes1.jpeg', 'shoes1.jpeg', '155.00', 0, 'purple',10),
+(12, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes2.jpeg', 'shoes2.jpeg', 'shoes2.jpeg', 'shoes2.jpeg', '155.00', 0, 'white',10),
+(13, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes3.jpeg', 'shoes3.jpeg', 'shoes3.jpeg', 'shoes3.jpeg', '155.00', 0, 'yellow',10),
+(14, 'Sport Shoes', 'shoes', 'awesom shoes', 'shoes4.jpeg', 'shoes4.jpeg', 'shoes4.jpeg', 'shoes4.jpeg', '155.00', 0, 'black',10),
+(15, 'Nice coat', 'coats', 'awesome coat', 'clothes3.jpeg', 'clothes3.jpeg', 'clothes3.jpeg', 'clothes3.jpeg', '190.00', 0, 'black',10),
+(16, 'Blue coat', 'coats', 'awesome blue coat', 'clothes4.jpeg', 'clothes4.jpeg', 'clothes4.jpeg', 'clothes4.jpeg', '190.00', 0, 'blue',10);
 
 -- --------------------------------------------------------
 
@@ -284,6 +285,7 @@ ALTER TABLE `products`
 ALTER TABLE `users`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
