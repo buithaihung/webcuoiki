@@ -9,6 +9,7 @@ if(isset($_GET['transaction_id']) && isset($_GET['order_id'])){
     $order_status = "paid";
     $transaction_id = $_GET['transaction_id'];
     $user_id = $_SESSION['user_id'];
+    date_default_timezone_set("Asia/Ho_Chi_Minh");
     $payment_date = date('Y-m-d H:i:s');
 
     //change order_status to paid
