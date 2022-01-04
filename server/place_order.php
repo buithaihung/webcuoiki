@@ -54,6 +54,8 @@ if(!isset($_SESSION['logged_in'])){
                         $product_image = $product['product_image'];
                         $product_price = $product['product_price'];
                         $product_quantity = $product['product_quantity'];
+                        $max_product_quantity = $product['max_product_quantity'];
+                        $max_product_quantity = $max_product_quantity - $product_quantity;
 
                         //4. store each single item in order_items database
                         $stmt1 = $conn->prepare("INSERT INTO order_items (order_id,product_id,product_name,product_image,product_price,product_quantity,user_id,order_date)
@@ -62,6 +64,9 @@ if(!isset($_SESSION['logged_in'])){
                         $stmt1->bind_param('iissiiis',$order_id,$product_id,$product_name,$product_image,$product_price,$product_quantity,$user_id,$order_date);
 
                         $stmt1->execute();
+                        $stmt = $conn->prepare("UPDATE products SET max_product_quantity=?  WHERE product_id=?");
+                        $stmt->bind_param('ii',$max_product_quantity,$product_id);
+                        $stmt->execute();
 
                     }
 

@@ -38,6 +38,10 @@
                     <label>Price</label>
                     <input type="text" class="form-control" id="product-price" name="price" placeholder="Price" required/>
                 </div>
+                  <div class="form-group mt-2">
+                    <label>Quantity</label>
+                    <input type="number" min="0" class="form-control" id="product-quantity" name="quantity" placeholder="Quantity" required/>
+                </div>
                  <div class="form-group mt-2">
                     <label>Special Offer/Sale</label>
                     <input type="number" class="form-control" id="product-offer" name="offer" placeholder="Sale %" required/>
