@@ -14,11 +14,7 @@ if(!isset($_SESSION['logged_in'])){
 
     //if user is logged in
 }else{
-
-
                 if( isset($_POST['place_order'])  ){
-
-
                     //1. get user info and store it in database
                     $name = $_POST['name'];
                     $email = $_POST['email'];
@@ -31,12 +27,9 @@ if(!isset($_SESSION['logged_in'])){
                     date_default_timezone_set("Asia/Ho_Chi_Minh");
                     $order_date = date('Y-m-d H:i:s');
 
-
                     $stmt = $conn->prepare("INSERT INTO orders (order_cost,order_status,user_id,user_phone,user_city,user_address,order_date)
                                     VALUES (?,?,?,?,?,?,?); ");
-
                     $stmt->bind_param('isiisss',$order_cost,$order_status,$user_id,$phone,$city,$address,$order_date);
-
                     $stmt_status = $stmt->execute();
 
 

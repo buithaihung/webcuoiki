@@ -28,7 +28,7 @@ if(isset($_POST['register'])){
     header('location: register.php?error=passwords dont match');
 
 
-  //if passwod is less than 6 char
+  //if password is less than 6 char
   }else if(strlen($password) < 6){
     header('location: register.php?error=password must be at least 6 charachters');
 
@@ -45,7 +45,7 @@ if(isset($_POST['register'])){
 
                 //if there is a user already registered with this email
                 if($num_rows != 0){
-                  header('location: register.php?error=user with this eamil already exists');
+                  header('location: register.php?error=user with this email already exists');
 
 
                   //if no user registed with this email before
@@ -56,8 +56,6 @@ if(isset($_POST['register'])){
 
                         $stmt->bind_param('sss',$name,$email,md5($password));
 
-
-
                         //if account was created successfully
                         if($stmt->execute()){
                               $user_id = $stmt->insert_id;
@@ -66,39 +64,20 @@ if(isset($_POST['register'])){
                               $_SESSION['user_name'] = $name;
                               $_SESSION['logged_in'] = true;
                               header('location: account.php?register_success=You registered successfully');
-
                           //account could not be created
                         }else{
-
                              header('location: register.php?error=could not create an account at the moment');
-
                         }
-
-
-
                 }
-
               }
-
-
-
-
-
-
-
 }
-
-
-
-
-
 ?>
 
 
 
 
 
-<!--Resgister-->
+<!--Register-->
 <section class="my-5 py-5">
     <div class="container text-center mt-3 pt-5">
         <h2 class="form-weight-bold">Register</h2>

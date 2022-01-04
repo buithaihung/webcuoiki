@@ -19,6 +19,7 @@ if(isset($_GET['logout'])){
     unset($_SESSION['logged_in']);
     unset($_SESSION['user_email']);
     unset($_SESSION['user_name']);
+
     header('location: login.php');
     exit;
 
@@ -33,14 +34,14 @@ if(isset($_POST['change_password'])){
           $confirmPassword = $_POST['confirmPassword'];
           $user_email = $_SESSION['user_email'];
 
-          //if passwords dont match
+          //if passwords don't match
           if($password !== $confirmPassword){
-            header('location: account.php?error=passwords dont match');
+            header("location: account.php?error=passwords don't match");
 
 
-          //if passwod is less than 6 char
+          //if password is less than 6 char
           }else if(strlen($password) < 6){
-            header('location: account.php?error=password must be at least 6 charachters');
+            header('location: account.php?error=password must be at least 6 characters');
 
             //no errors
           }else{
@@ -53,10 +54,7 @@ if(isset($_POST['change_password'])){
             }else{
               header('location: account.php?error=could not update password');
             }
-
           }
-
-
 }
 
 
@@ -64,34 +62,14 @@ if(isset($_POST['change_password'])){
 
 //get orders
 if(isset($_SESSION['logged_in'])){
-
   $user_id = $_SESSION['user_id'];
-
   $stmt = $conn->prepare("SELECT * FROM orders WHERE user_id=? ");
-
   $stmt->bind_param('i',$user_id);
-
   $stmt->execute();
-
   $orders = $stmt->get_result();//[]
-
-
-
 }
 
-
-
-
-
 ?>
-
-
-
-
-
-
-
-
 
 
 
@@ -163,11 +141,7 @@ if(isset($_SESSION['logged_in'])){
             <th>Order Date</th>
             <th>Order details</th>
         </tr>
-
-
         <?php  while($row = $orders->fetch_assoc() ){ ?>
-
-
         <tr>
             <td>
                 <!-- <div class="product-info">
@@ -178,19 +152,15 @@ if(isset($_SESSION['logged_in'])){
                                 </div> -->
                 <span><?php echo $row['order_id']; ?></span>
             </td>
-
             <td>
                 <span><?php echo $row['order_cost']; ?></span>
             </td>
-
             <td>
                 <span><?php echo $row['order_status']; ?></span>
             </td>
-
             <td>
                 <span><?php echo $row['order_date']; ?></span>
             </td>
-
             <td>
                 <form method="POST" action="order_details.php">
                     <input type="hidden" value="<?php echo $row['order_status'];?>" name="order_status" />
@@ -198,14 +168,8 @@ if(isset($_SESSION['logged_in'])){
                     <input class="btn order-details-btn" name="order_details_btn" type="submit" value="details" />
                 </form>
             </td>
-
         </tr>
-
         <?php } ?>
-
-
-
-
     </table>
 
 
@@ -213,15 +177,5 @@ if(isset($_SESSION['logged_in'])){
 
 
 </section>
-
-
-
-
-
-
-
-
-
-
 
 <?php include('layouts/footer.php'); ?>

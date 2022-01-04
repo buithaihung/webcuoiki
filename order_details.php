@@ -47,21 +47,10 @@ function calculateTotalOrderPrice($order_details){
 
       $product_price = $row['product_price'];
       $product_quantity = $row['product_quantity'];
-
-       $total  =  $total  + ($product_price * $product_quantity);
-
+      $total = $total + ($product_price * $product_quantity);
   }
-
-
    return $total;
-
-
 }
-
-
-
-
-
 ?>
 
 
@@ -103,12 +92,7 @@ function calculateTotalOrderPrice($order_details){
         </tr>
         <?php } ?>
 
-
-
-
     </table>
-
-
 
     <?php if($order_status == "not paid"){?>
     <form style="float: right;" method="POST" action="payment.php">
@@ -121,13 +105,6 @@ function calculateTotalOrderPrice($order_details){
     <?php } ?>
 
 </section>
-
-
-
-
-
-
-
 
 
 

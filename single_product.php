@@ -41,11 +41,7 @@ if(isset($_GET['product_id'])){
 <!--Single product-->
 <section class="container single-product my-5 pt-5">
     <div class="row mt-5">
-
         <?php  while($row = $product->fetch_assoc()){ ?>
-
-
-
         <div class="col-lg-5 col-md-6 col-sm-12">
             <img class="img-fluid w-100 pb-1" src="assets/imgs/<?php echo $row['product_image']; ?>" id="mainImg" />
             <div class="small-img-group">
@@ -63,10 +59,6 @@ if(isset($_GET['product_id'])){
                 </div>
             </div>
         </div>
-
-
-
-
         <div class="col-lg-6 col-md-12 col-12">
             <h6>Men/Shoes</h6>
             <h3 class="py-4"><?php echo $row['product_name']; ?></h3>
