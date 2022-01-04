@@ -21,6 +21,9 @@ if( isset($_POST['order_pay_btn']) ){
 <!--Payment-->
 <section class="my-5 py-5">
     <div class="container text-center mt-3 pt-5">
+        <?php if (isset($_GET['order_successful'])) { ?>
+            <p class="text-center" style="color: green;"><?php echo $_GET['order_successful']; ?></p>
+        <?php } ?>
         <h2 class="form-weight-bold">Payment</h2>
         <hr class="mx-auto">
     </div>
