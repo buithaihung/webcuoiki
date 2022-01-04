@@ -76,7 +76,7 @@ if(!isset($_SESSION['logged_in'])){
 
                     //5. remove eveything from cart --> delay until payment is done
                     unset($_SESSION['cart']);
-
+                    unset($_SESSION['quantity']);
 
                     $_SESSION['order_id'] = $order_id;
 
