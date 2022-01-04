@@ -8,25 +8,11 @@
 
 
 if( !empty($_SESSION['cart']) ){
-
   //let user in
-
-
-
   //send user to home page
 }else{
-
   header('location: index.php');
-
-
 }
-
-
-
-
-
-
-
 ?>
 
 

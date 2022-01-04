@@ -27,8 +27,6 @@ if( isset($_POST['order_pay_btn']) ){
     <div class="mx-auto container text-center">
 
 
-
-
         <?php if(isset($_POST['order_status']) && $_POST['order_status'] == "not paid"){ ?>
         <?php $amount = strval($_POST['order_total_price']); ?>
         <?php $order_id = $_POST['order_id']; ?>
@@ -36,8 +34,6 @@ if( isset($_POST['order_pay_btn']) ){
         <!-- <input class="btn btn-primary" type="submit" value="Pay Now"/> -->
         <!-- Set up a container element for the button -->
         <div id="paypal-button-container"></div>
-
-
 
 
         <?php } else if(isset($_SESSION['total'])  && $_SESSION['total'] != 0){?>
@@ -57,10 +53,6 @@ if( isset($_POST['order_pay_btn']) ){
 
 
 
-
-
-
-
     </div>
 </section>
 
@@ -72,7 +64,9 @@ if( isset($_POST['order_pay_btn']) ){
 
 
 <!-- Include the PayPal JavaScript SDK; replace "test" with your own sandbox Business account app client ID -->
-<script src=""></script>
+<script
+    src="https://www.paypal.com/sdk/js?&client-id=AT1klg-jf34bWOapV7OUdhs2xLYm5tDiDsZ2RPLf5FYdMuOvL3NFYuY3Wp-87oqfiUE_9U60G5BMcVp8&currency=USD">
+</script>
 
 
 

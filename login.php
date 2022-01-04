@@ -14,7 +14,6 @@ if(isset($_SESSION['logged_in'])){
 
 if(isset($_POST['login_btn'])){
 
-
   $email = $_POST['email'];
   $password = md5($_POST['password']);
 
@@ -26,8 +25,8 @@ if(isset($_POST['login_btn'])){
       $stmt->bind_result($user_id,$user_name,$user_email,$user_password);
       $stmt->store_result();
 
-      if($stmt->num_rows() == 1){
-         $stmt->fetch();
+      if($stmt->num_rows == 1){
+        $stmt->fetch();
 
         $_SESSION['user_id'] = $user_id;
         $_SESSION['user_name'] = $user_name;
@@ -48,11 +47,6 @@ if(isset($_POST['login_btn'])){
 
 
 }
-
-
-
-
-
 
 ?>
 

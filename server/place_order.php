@@ -14,11 +14,7 @@ if(!isset($_SESSION['logged_in'])){
 
     //if user is logged in
 }else{
-
-
                 if( isset($_POST['place_order'])  ){
-
-
                     //1. get user info and store it in database
                     $name = $_POST['name'];
                     $email = $_POST['email'];
@@ -30,12 +26,9 @@ if(!isset($_SESSION['logged_in'])){
                     $user_id = $_SESSION['user_id'];
                     $order_date = date('Y-m-d H:i:s');
 
-
                     $stmt = $conn->prepare("INSERT INTO orders (order_cost,order_status,user_id,user_phone,user_city,user_address,order_date)
                                     VALUES (?,?,?,?,?,?,?); ");
-
                     $stmt->bind_param('isiisss',$order_cost,$order_status,$user_id,$phone,$city,$address,$order_date);
-
                     $stmt_status = $stmt->execute();
 
 
@@ -75,6 +68,8 @@ if(!isset($_SESSION['logged_in'])){
 
                     //5. remove eveything from cart --> delay until payment is done
                     unset($_SESSION['cart']);
+                    unset($_SESSION['quantity']);
+
 
 
                     $_SESSION['order_id'] = $order_id;
