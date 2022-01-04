@@ -70,11 +70,10 @@ if(isset($_GET['product_id'])){
                 <input type="hidden" name="product_name" value="<?php echo $row['product_name']; ?>" />
                 <input type="hidden" name="product_price" value="<?php echo $row['product_price']; ?>" />
                 <input type="hidden" name="max_product_quantity" value="<?php echo $row['max_product_quantity']; ?>" />
-                <input type="number" name="product_quantity" min="0" value="1" max="<?php echo $row['max_product_quantity']; ?>"/>
-                <button class="buy-btn" type="submit" name="add_to_cart">Add To Cart</button>
+                <input type="number" name="product_quantity" min="0" value="<?php if ($row['max_product_quantity'] == 0){ echo 0;  } else {echo 1;} ?>" max="<?php echo $row['max_product_quantity']; ?>" />
+                <button class="buy-btn" type="submit" name="add_to_cart" <?php if ($row['max_product_quantity'] == 0){ ?> disabled <?php   } ?> > <?php if ($row['max_product_quantity'] == 0){ echo 'Out of Stock' ;} else { echo 'Add to cart' ;} ?></button>
             </form>
-
-
+            <hr>
             <h4 class="mt-5 mb-5">Product details</h4>
             <span><?php echo $row['product_description']; ?>
             </span>

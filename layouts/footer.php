@@ -8,12 +8,7 @@
           <div class="footer-one col-lg-3 col-md-6 col-sm-12">
            <h5 class="pb-2">Featured</h5>
            <ul class="text-uppercase">
-             <li><a href="#">men</a></li>
-             <li><a href="#">women</a></li>
-             <li><a href="#">boys</a></li>
-             <li><a href="#">girls</a></li>
-             <li><a href="#">new arrivals</a></li>
-             <li><a href="#">clothes</a></li>
+             <li><a href="shop.php">Shop now</a></li>
            </ul>
           </div>
 
@@ -55,9 +50,9 @@
               <p>eCommerce @ 2025 All Right Reserved</p>
             </div>
             <div class="col-lg-3 col-md-5 col-sm-12 mb-4">
-             <a href="#"><i class="fab fa-facebook"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.facebook.com/photo.php?fbid=951773085211707&set=t.100028206378138&type=3"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.instagram.com/truong.nv8/"><i class="fab fa-instagram"></i></a>
+             <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
         </div>
