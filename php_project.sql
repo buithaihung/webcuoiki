@@ -32,7 +32,7 @@ CREATE TABLE `admins` (
   `admin_name` varchar(250) NOT NULL,
   `admin_email` text NOT NULL,
   `admin_password` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
 -- Dumping data for table `admins`
@@ -56,7 +56,7 @@ CREATE TABLE `orders` (
   `user_city` varchar(255) NOT NULL,
   `user_address` varchar(255) NOT NULL,
   `order_date` datetime NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
 -- Dumping data for table `orders`
@@ -94,7 +94,7 @@ CREATE TABLE `order_items` (
   `product_quantity` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `order_date` datetime NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
 -- Dumping data for table `order_items`
@@ -131,7 +131,7 @@ CREATE TABLE `payments` (
   `user_id` int(11) NOT NULL,
   `transaction_id` varchar(250) NOT NULL,
   `payment_date` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
 -- Dumping data for table `payments`
@@ -159,7 +159,7 @@ CREATE TABLE `products` (
   `product_price` decimal(6,2) NOT NULL,
   `product_special_offer` int(2) NOT NULL,
   `product_color` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
 -- Dumping data for table `products`
@@ -193,7 +193,7 @@ CREATE TABLE `users` (
   `user_name` varchar(100) NOT NULL,
   `user_email` varchar(100) NOT NULL,
   `user_password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
 -- Dumping data for table `users`

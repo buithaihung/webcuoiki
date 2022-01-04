@@ -71,8 +71,6 @@ if(!isset($_SESSION['logged_in'])){
                     unset($_SESSION['cart']);
                     unset($_SESSION['quantity']);
 
-
-
                     $_SESSION['order_id'] = $order_id;
 
                     //6. inform user whether everything is fine or there is a problem
