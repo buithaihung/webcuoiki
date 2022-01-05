@@ -349,6 +349,10 @@ footer .copyright img {
 .single-product .buy-btn:hover {
   background-color: #222222;
 }
+.single-product .buy-btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
 
 /* Cart */
 
