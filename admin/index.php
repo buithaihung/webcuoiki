@@ -119,7 +119,7 @@ $orders = $stmt2->get_result();
                 <td><?php echo $order['user_address']; ?></td>
 
                 <td><a class="btn btn-primary" href="edit_order.php?order_id=<?php echo $order['order_id']; ?>">Edit</a></td>
-                <td><a class="btn btn-danger" href="delete_order.php?order_id=<?php echo $order['order_id'];?>">Delete</a></td>
+                <td><a class="btn btn-danger" href="delete_order.php?order_id=<?php echo $order['order_id'];?>&order_status=<?php echo $order['order_status'];?>">Delete</a></td>
 
               </tr>
 
