@@ -60,7 +60,7 @@ if(isset($_GET['product_id'])){
             </div>
         </div>
         <div class="col-lg-6 col-md-12 col-12">
-            <h6>Men/Shoes</h6>
+            <h6>Group 5</h6>
             <h3 class="py-4"><?php echo $row['product_name']; ?></h3>
             <h2>$<?php echo $row['product_price']; ?></h2>
 
@@ -74,6 +74,7 @@ if(isset($_GET['product_id'])){
                 <button class="buy-btn" type="submit" name="add_to_cart" <?php if ($row['max_product_quantity'] == 0){ ?> disabled <?php   } ?> > <?php if ($row['max_product_quantity'] == 0){ echo 'Out of Stock' ;} else { echo 'Add to cart' ;} ?></button>
             </form>
             <hr>
+            <h4 style="color: #fb774b"><?php if ($row['max_product_quantity'] !== 0){echo "Available quantity: ",$row['max_product_quantity']  ;} ?></h4>
             <h4 class="mt-5 mb-5">Product details</h4>
             <span><?php echo $row['product_description']; ?>
             </span>
