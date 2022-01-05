@@ -79,18 +79,18 @@ $users = $stmt2->get_result();
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th scope="col">User ID</th>
-              <th scope="col">User Name</th>
-              <th scope="col">User Email</th>
+              <th style="text-align: center; vertical-align: middle;" scope="col">User ID</th>
+              <th style="text-align: center; vertical-align: middle;" scope="col">User Name</th>
+              <th style="text-align: center; vertical-align: middle;" scope="col">User Email</th>
             </tr>
           </thead>
           <tbody>
 
             <?php foreach ($users as $user) { ?>
               <tr>
-                <td><?php echo $user['user_id']; ?></td>
-                <td><?php echo $user['user_name']; ?></td>
-                <td><?php echo $user['user_email']; ?></td>
+                <td style="text-align: center; vertical-align: middle;"><?php echo $user['user_id']; ?></td>
+                <td style="text-align: center; vertical-align: middle;"><?php echo $user['user_name']; ?></td>
+                <td style="text-align: center; vertical-align: middle;"><?php echo $user['user_email']; ?></td>
 
               </tr>
 
