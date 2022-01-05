@@ -19,13 +19,14 @@
        $title = $_POST['title'];
        $description = $_POST['description'];
        $price = $_POST['price'];
+       $max_product_quantity = $_POST['quantity'];
        $offer = $_POST['offer'];
        $color = $_POST['color'];
        $category = $_POST['category'];
 
         $stmt = $conn->prepare("UPDATE products SET product_name=?, product_description=?, product_price=?,
-                                product_special_offer=?, product_color=?, product_category=?  WHERE product_id=?");
-        $stmt->bind_param('ssssssi',$title,$description,$price,$offer,$color,$category,$product_id);
+                                product_special_offer=?, product_color=?, product_category=?,max_product_quantity=?  WHERE product_id=?");
+        $stmt->bind_param('ssssssii',$title,$description,$price,$offer,$color,$category,$max_product_quantity,$product_id);
 
         if($stmt->execute()){
             header('location: products.php?edit_success_message=Product has been updated successfully');
@@ -86,6 +87,10 @@
                   <div class="form-group mt-2">
                     <label>Price</label>
                     <input type="text" class="form-control" id="product-price"  value="<?php echo $product['product_price']?>"  name="price" placeholder="Price" required/>
+                </div>
+                  <div class="form-group mt-2">
+                    <label>Quantity</label>
+                    <input type="number" min="0" class="form-control" id="product-quantity"  value="<?php echo $product['max_product_quantity']?>"  name="quantity" placeholder="Price" required/>
                 </div>
                 <div class="form-group mt-2">
                     <label>Category</label>
