@@ -33,7 +33,7 @@ $stmt1->fetch();
 
 
 //3. products per page
-$total_records_per_page = 2;
+$total_records_per_page = 10;
 
 $offset = ($page_no-1) * $total_records_per_page;
 
