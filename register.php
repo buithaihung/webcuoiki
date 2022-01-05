@@ -30,7 +30,7 @@ if(isset($_POST['register'])){
 
   //if password is less than 6 char
   }else if(strlen($password) < 6){
-    header('location: register.php?error=password must be at least 6 charachters');
+    header('location: register.php?error=password must be at least 6 characters');
 
 
   //if there is no error

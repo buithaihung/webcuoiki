@@ -135,7 +135,7 @@ if(isset($_SESSION['logged_in'])){
 
     <table class="mt-5 pt-5">
         <tr>
-            <th>Orde id</th>
+            <th>Order id</th>
             <th>Order cost</th>
             <th>Order status</th>
             <th>Order Date</th>
