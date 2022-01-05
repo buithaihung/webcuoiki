@@ -167,21 +167,25 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_name`, `product_category`, `product_description`, `product_image`, `product_image2`, `product_image3`, `product_image4`, `product_price`, `product_special_offer`, `product_color`,`max_product_quantity`) VALUES
-(2, 'Green Bag', 'bags', 'awesome green bag', 'featured2.jpeg', 'featured2.jpeg', 'featured2.jpeg', 'featured2.jpeg', '160.00', 0, 'green',10),
-(3, 'Black Bag', 'bags', 'awesome black bag', 'featured3.jpeg', 'featured3.jpeg', 'featured3.jpeg', 'featured3.jpeg', '200.00', 0, 'black',10),
-(4, 'Blue Bag', 'bags', 'awesome blue bag', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', '180.00', 0, 'blue',10),
-(5, 'Black coat', 'coats', 'Black coat for men', 'clothes1.jpeg', 'clothes1.jpeg', 'clothes1.jpeg', 'clothes1.jpeg', '150.00', 0, 'black',10),
-(6, 'Blue coat', 'coats', 'awesome blue coat', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', 'clothes2.jpeg', '190.00', 0, 'blue',10),
-(7, 'Apple watch', 'watches', 'awesome black watches', 'watch4.jpeg', 'watch4.jpeg', 'watch4.jpeg', 'watch4.jpeg', '400.00', 0, 'back',10),
-(8, 'Garmin watches', 'watches', 'awesome watches', 'watch3.jpeg', 'watch3.jpeg', 'watch3.jpeg', 'watch3.jpeg', '300.00', 0, 'black',10),
-(9, 'Apple watch', 'watches', 'awesome white watches', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', '440.00', 0, 'white',10),
-(10, 'Garmin watches', 'watches', 'awesome purple coat', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', '300.00', 0, 'purple',10),
-(11, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes1.jpeg', 'shoes1.jpeg', 'shoes1.jpeg', 'shoes1.jpeg', '155.00', 0, 'purple',10),
-(12, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes2.jpeg', 'shoes2.jpeg', 'shoes2.jpeg', 'shoes2.jpeg', '155.00', 0, 'white',10),
-(13, 'Sport Shoes', 'shoes', 'awesome shoes', 'shoes3.jpeg', 'shoes3.jpeg', 'shoes3.jpeg', 'shoes3.jpeg', '155.00', 0, 'yellow',10),
-(14, 'Sport Shoes', 'shoes', 'awesom shoes', 'shoes4.jpeg', 'shoes4.jpeg', 'shoes4.jpeg', 'shoes4.jpeg', '155.00', 0, 'black',10),
-(15, 'Nice coat', 'coats', 'awesome coat', 'clothes3.jpeg', 'clothes3.jpeg', 'clothes3.jpeg', 'clothes3.jpeg', '190.00', 0, 'black',10),
-(16, 'Blue coat', 'coats', 'awesome blue coat', 'clothes4.jpeg', 'clothes4.jpeg', 'clothes4.jpeg', 'clothes4.jpeg', '190.00', 0, 'blue',10);
+(1, 'Green Bag', 'bags', 'MODERN DESIGN', 'featured2.jpeg', 'bg_1.jpeg', 'bg_2.jpeg', 'bg_3.jpeg', '160.00', 0, 'green',10),
+(2, 'Black Bag', 'bags', 'awesome black bag', 'featured3.jpeg', 'b_1.jpeg', 'b_2.jpeg', 'b_3.jpeg', '200.00', 0, 'black',10),
+(3, 'Blue Bag', 'bags', 'MODERN DESIGN', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', 'featured4.jpeg', '180.00', 0, 'blue',10),
+(4, 'Apple AirPods (3rd Generation)', 'headphone', 'awesome headphone', 'ap3_1.jpeg', 'ap3_2.jpeg', 'ap3_3.jpeg', 'ap3_4.jpeg', '179.00', 0, 'white', 20),
+(5, 'Apple AirPods (2nd Generation)', 'headphone', 'awesome headphone', 'ap2_1.jpeg', 'ap2_2.jpeg', 'ap2_3.jpeg', 'ap2_4.jpeg', '129.00', 0, 'white', 20),
+(6, 'Apple AirPods Max - Space Gray', 'headphone', 'MODERN DESIGN', 'apm_1.jpeg', 'apm_2.jpeg', 'apm_3.jpeg', 'apm_4.jpeg', '479.00', 0, 'white', 20),
+(7, 'New Apple AirPods Pro', 'headphone', 'awesome headphone', 'ap_1.jpeg', 'ap_2.jpeg', 'ap_3.jpeg', 'ap_4.jpeg', '249.00', 0, 'white', 30),
+(8, 'Sony WH-1000XM4 Wireless', 'headphone', 'awesome headphone', 'sn_1.jpeg', 'sn_2.jpeg', 'sn_3.jpeg', 'sn_4.jpeg', '348.00', 0, 'black', 30),
+(9, 'Apple watch white', 'watches', 'More powerful thanks to the S5 . processor', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', 'watch2.jpeg', '400.00', 0, 'white',10),
+(10, 'Garmin watch purple', 'watches', 'awesome watches', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', 'watch1.jpeg', '300.00', 0, 'purple',10),
+(11, 'Apple watch black', 'watches', 'More powerful thanks to the S5 . processor', 'watch4.jpeg', 'w1.jpeg', 'w2.jpeg', 'w3.jpeg', '440.00', 0, 'black',10),
+(12, 'Garmin watch', 'watches', 'Easy-to use GPS running watch tracks how far, how fast and where you run', 'watch3.jpeg', 'gw_1.jpeg', 'gw_2.jpeg', 'gw3.jpeg', '300.00', 0, 'black',10),
+(13, 'Sony WF-1000XM4', 'headphone', 'awesome headphone', 'sh_1.jpeg', 'sh_2.jpeg', 'sh_3.jpeg', 'sh_4.jpeg', '278.00', 0, 'white-yellow', 10),
+(14, 'Flash Furniture X10 Gaming Chair', 'chair', 'perfect', 'c_1.jpeg', 'c_2.jpeg', 'c_3.jpeg', 'c_4.jpeg', '105.87', 0, 'black-blue', 30),
+(15, 'YITAHOME Massage Gaming Chair', 'chair', 'awesome chair', 'ch_1.jpeg', 'ch_2.jpeg', 'ch_3.jpeg', 'ch_4.jpeg', '249.99', 0,'white-black', 20),
+(16, 'X Rocker Falcon Pedestal PC Office Gaming Chair', 'chair', 'MODERN DESIGN', 'chg_1.jpeg', 'chg_2.jpeg', 'chg_3.jpeg', 'chg_4.jpeg', '229.99', 0, 'red-white', 20),
+(17, 'X Rocker RGB Prism Pedestal 2.1 Dual Gaming Chair', 'chair', 'perfect', 'cx_1.jpeg', 'cx_2.jpeg', 'cx_3.jpeg', 'cx_4.jpeg', '349.99', 0, 'rgb', 10),
+(18, 'X Rocker Limewire 2.1 BT Floor Rocker Gaming Chair', 'chair', 'HIGH TECH GAMING CHAIR', 'cxx_1.jpeg', 'cxx_2.jpeg', 'cxx_3.jpeg', 'cxx_4.jpeg', '179.99', 0, 'green-black', 10);
+
 
 -- --------------------------------------------------------
 

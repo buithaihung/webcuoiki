@@ -53,9 +53,9 @@
                     <label>Category</label>
                     <select  class="form-select" required name="category">
                         <option value="bags">Bags</option>
-                        <option value="shoes">Shoes</option>
+                        <option value="headphone">Headphones</option>
                         <option value="watches">Watches</option>
-                        <option value="clothes">Clothes</option>
+                        <option value="chair">Chairs</option>
                     </select>
                 </div>
 

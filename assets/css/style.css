@@ -245,11 +245,9 @@ hr {
 #banner h1 {
   color: #fff;
 }
-
-#banner h4 {
-  color: #fff;
+#banner div h1 span {
+  background-color: #fb774b;
 }
-
 #banner button {
   background-color: #fb774b;
 }

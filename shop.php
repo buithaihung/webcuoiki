@@ -133,18 +133,18 @@ if(isset($_POST['search'])){
 
                 <p>Category</p>
                 <div class="form-check">
-                    <input class="form-check-input" value="shoes" type="radio" name="category" id="category_one"
-                        <?php if(isset($category) && $category=='shoes'){echo 'checked';}?>>
+                    <input class="form-check-input" value="headphone" type="radio" name="category" id="category_one"
+                        <?php if(isset($category) && $category=='headphone'){echo 'checked';}?>>
                     <label class="form-check-label" for="flexRadioDefault1">
-                        Shoes
+                        Headphones
                     </label>
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input" value="coats" type="radio" name="category" id="category_two"
-                        <?php if(isset($category) && $category=='coats'){echo 'checked';}?>>
+                    <input class="form-check-input" value="chair" type="radio" name="category" id="category_two"
+                        <?php if(isset($category) && $category=='chair'){echo 'checked';}?>>
                     <label class="form-check-label" for="flexRadioDefault2">
-                        Coats
+                        Chairs
                     </label>
                 </div>
 

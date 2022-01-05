@@ -8,7 +8,7 @@
 <section id="home">
     <div class="container">
         <h5>NEW ARRIVALS</h5>
-        <h1><span>Best Prices</span> This Season</h1>
+        <h1><span>Best Prices</span> This Year</h1>
         <p>E-shop offers the best products for the most affordable prices</p>
         <button onclick="window.location.href='<?php echo 'shop.php'; ?>';">Shop Now</button>
     </div>
@@ -29,18 +29,18 @@
     <div class="row p-0 m-0">
         <!--One-->
         <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
-            <img class="img-fluid" src="assets/imgs/1.jpeg" />
+            <img class="img-fluid" src="assets/imgs/ap_1.jpeg" />
             <div class="details">
-                <h2>Extremely Awesome Shoes</h2>
+                <h2>Extremely Awesome Headphones</h2>
                 <button onclick="window.location.href='<?php echo 'shop.php'; ?>';" class="text-uppercase">Shop
                     Now</button>
             </div>
         </div>
         <!--Two-->
         <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
-            <img class="img-fluid" src="assets/imgs/2.jpeg" />
+            <img class="img-fluid" src="assets/imgs/cx_1.jpeg" />
             <div class="details">
-                <h2>Awesome Jacket</h2>
+                <h2>Awesome Chair</h2>
                 <button onclick="window.location.href='<?php echo 'shop.php'; ?>';" class="text-uppercase">Shop
                     Now</button>
             </div>
@@ -100,7 +100,7 @@
 <section id="banner" class="my-5 py-5">
     <div class="container">
         <h4>MID SEASON'S SALE</h4>
-        <h1>Autumn Collection <br> UP to 30% OFF</h1>
+        <h1><span>Headphones</span>  Collection <br> UP to 30% OFF</h1>
         <button onclick="window.location.href='<?php echo 'shop.php'; ?>';" class="text-uppercase">shop now</button>
     </div>
 </section>
@@ -109,13 +109,13 @@
 <!--Clothes-->
 <section id="featured" class="my-5">
     <div class="container text-center mt-5 py-5">
-        <h3>Dresses & Coats</h3>
+        <h3>Amazing Headphones</h3>
         <hr class="mx-auto">
-        <p>Here you can check out our amazing clothes</p>
+        <p>Here you can check out our amazing headphones</p>
     </div>
     <div class="row mx-auto container-fluid">
 
-        <?php include('server/get_coats.php'); ?>
+        <?php include('server/get_headphones.php'); ?>
 
         <?php while ($row = $coats_products->fetch_assoc()) { ?>
 
@@ -181,15 +181,15 @@
 <!--Shoes-->
 <section id="shoes" class="my-5">
     <div class="container text-center mt-5 py-5">
-        <h3>Shoes</h3>
+        <h3>Chair</h3>
         <hr class="mx-auto">
-        <p>Here you can check out our amazing shoes</p>
+        <p>Here you can check out our amazing chair</p>
     </div>
     <div class="row mx-auto container-fluid">
 
-        <?php include('server/get_shoes.php'); ?>
+        <?php include('server/get_chairs.php'); ?>
 
-        <?php while ($row = $shoes->fetch_assoc()) { ?>
+        <?php while ($row = $chair->fetch_assoc()) { ?>
 
 
         <div class="product text-center col-lg-3 col-md-6 col-sm-12">
