@@ -33,7 +33,7 @@ $stmt1->fetch();
 
 
 //3. products per page
-$total_records_per_page = 10;
+$total_records_per_page = 2;
 
 $offset = ($page_no-1) * $total_records_per_page;
 
@@ -136,10 +136,15 @@ $orders = $stmt2->get_result();
 
 
                 <li class="page-item"><a class="page-link" href="?page_no=1">1</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="?page_no=2">2</a></li> -->
+                <?php if( $total_no_of_pages >=2) {?>
                 <li class="page-item"><a class="page-link" href="?page_no=2">2</a></li>
-
-                <?php if( $page_no >=3) {?>
+                <?php } ?>
+                <?php if( $total_no_of_pages >=3) {?>
                 <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <?php } ?>
+                <?php if( $page_no >=3) {?>
+                <!-- <li class="page-item"><a class="page-link" href="#">...</a></li> -->
                 <li class="page-item"><a class="page-link"
                         href="<?php echo "?page_no=".$page_no;?>"><?php echo $page_no;?></a></li>
                 <?php } ?>
